@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        text-align: center;
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        color: #333;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        height: 280px;
+        margin-bottom: 20px;
+      }
+      h1 {
+        font-size: 2.5em;
+        margin: 10px 0;
+      }
+      h2 {
+        font-size: 1.75em;
+        margin: 10px 0;
+      }
+      h3 {
+        font-size: 1.5em;
+        margin: 20px 0;
+      }
+      div {
+        width: 200px;
+        margin: 20px auto 0;
+        display: flex;
+        justify-content: space-between;
+      }
+      button {
+        font-size: 1em;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+      }
+      button:first-child {
+        background-color: #4caf50;
+        color: white;
+      }
+      button:first-child:hover {
+        background-color: #45a049;
+      }
+      button:last-child {
+        background-color: #f44336;
+        color: white;
+        position: relative;
+      }
+      button:last-child:hover {
+        background-color: #e53935;
+      }
+    </style>
+    <title>Just For You &#129505</title>
+  </head>
+  <body>
+    <img src="https://raw.githubusercontent.com/DzarelDeveloper/Img/main/AskCrush.png" alt="Your Image Here" />
+    <h1>Natasyaa</h1>
+    <h2>Aku sebenarnya suka sama kamu</h2>
+    <h3>Kamu mau gak jadi pacar ku?</h3>
+    <div>
+      <button onclick="mau()">MAU</button>
+      <button onclick="gak(this)">GAK</button>
+    </div>
+    <script>
+      function mau() {
+        alert("Makasih mau nerima aku :)");
+        location.assign("https://wa.me/6285233331492?text=Aku%20mau%20jadi%20pacar%20kamu%20🤭😊");
+      }
+      function gak() {
+        alert("Kenapa Nat?");
+        location.assign("https://wa.me/6285233331492?text=Maaf%20aku%20masih%20belum%20bisa%20nerima%20kamu%20kita%20temenan%20aja%20yaa%20darr%20");  
+      }
+    </script>
+  </body>
+</html>
